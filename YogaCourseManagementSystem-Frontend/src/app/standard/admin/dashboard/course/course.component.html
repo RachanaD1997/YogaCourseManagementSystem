@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<div class="container">
+    <h1 align="center"><u><strong>CourseDetails</strong></u></h1>
+           
+    <table class="table table-striped">
+      <thead>
+        <tr style="font-size: large;">
+
+          <th>ID</th>
+
+          <th>Name</th>
+         
+          <th>BeginDate</th>
+          <th>EndDate</th>
+         
+          <th>Location</th>
+          
+          <th>Status</th>
+          <th>Fees</th>
+          <th>Actions</th>     
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let course of courses">
+        <tr>
+         
+          <td>{{course.id }}</td>
+          <td>{{course.name }}</td>
+         
+          <td>{{course.beginDate }}</td>
+          <td>{{course.endDate}}</td>
+          
+          <td>{{course.location}}</td>
+        
+          <td>{{course.status}}</td>
+          <td>{{course.fees}}</td>
+        
+          
+
+          
+ 
+          
+          <td>
+            
+            <button type="button" (click)="viewCourse(course.id)"  class="btn btn-success"><i class="far fa-eye"></i></button>&nbsp;&nbsp;
+            <button type="button" (click)="EditCourse(course.id)"  class="btn btn-primary"><i class="fas fa-edit"></i></button>&nbsp;&nbsp;
+            <button (click)="delete(course.id)" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </td>
+       
+        </tr>
+        
+
+      </tbody>
+    </table>
+    <button  type="button" class="btn btn-success" (click)="addnewcourse()">Add New Course</button>&nbsp;&nbsp;
+
+    <button  type="button" class="btn btn-primary" (click)="back()">Back</button>&nbsp;&nbsp;
+    <button type="button" class="btn btn-danger" (click)="logout()">Logout</button>&nbsp;&nbsp;&nbsp;
+
+
+  </div>
+

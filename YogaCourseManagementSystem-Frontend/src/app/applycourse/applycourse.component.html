@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(119, 174, 221);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;font-style: italic;font-size: xx-large;"><strong><u>COURSES</u></strong></h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+          <h2 align="center"><strong>Yoga for Beginners</strong></h2>
+          <img src="../../../assets/images/yoga0.jpg" alt="Mike" style="width:100%">
+          <div class="container"><br>
+            <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+              Yoga is in no way exclusive—being able to practice yoga does not matter how old you are, how much you weigh, 
+              what you do for a living, where you live, or what religion you practice. 
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+      <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+        </div>
+        </div>
+      </div>
+  
+    <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Online Meditation & Breath Workshop</strong></h2>
+      <img src="../../../assets/images/Seedling on Twitter.jpg" alt="Jane" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+              Online Meditation & Breath Workshop</li> 
+            <li><h2>Content:</h2>
+              meditation sessions are perfect for all levels, 
+              whether you're just starting on your meditation journey or would like to deepen your
+              practice.
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Yoga for relaxed awareness</strong></h2>
+      <img src="../../../assets/images/woman.png" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+              Yoga for relaxed awareness</li> 
+            <li><h2>Content:</h2>
+              You manage to do many activities with full attention, but sometimes there is no mental relaxation. 
+              And there are other moments when your awareness seems to have expanded, but the mind is not sharp.
+              
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Yamas and Niyamas for Daily Life</strong></h2>
+      <img src="../../../assets/images/face.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+              Yamas and Niyamas for Daily Life</li> 
+            <li><h2>Content:</h2>
+              Practicing yoga is much more than the postures. 
+              Learning to integrate the full “on and off the mat” practice including observing the five Yamas and Niyamas—yoga’s guide on social
+               and personal ethics— in your daily life can transform you and your yoga practice. 
+               Our thoughts, actions, decisions, interactions with others, our daily routines, 
+               our surroundings, everything can reflect the extent of our Yoga practice. Only by such 
+               inclusive and integrated yoga practice can the ultimate goal of this ancient system be
+                realized: bringing our bodies, minds and spirits into harmony to make us free from the 
+                bondage and miseries of life.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Yoga for Specialy Woman</strong></h2>
+      <img src="../../../assets/images/yoga1.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Advance Regular Yoga Classes</strong></h2>
+      <img src="../../../assets/images/Sports fashion photography - Claire Pepper - sports fashion and underwater photographer.png" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Yoga Psychology</strong></h2>
+      <img src="../../../assets/images/Meditate and reflect..jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>21 Days Better Living Course</strong></h2>
+      <img src="../../../assets/images/the top 24 yoga places in India    http___www.yogastore.ch_shop-angebot_yoga-in-india-l-buch_.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Weekend Yoga Regular Classes</strong></h2>
+      <img src="../../../assets/images/Find Your Foundation_ 4-Week Program _ Island Flow Yoga.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Weekend Yoga Regular Classes</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+              </ul>
+
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Children’s Regular / Weekend Classes</strong></h2>
+      <img src="../../../assets/images/childrens-class-tyi.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Regular Classes for Children</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+            <li><h2>Prerequisites:</h2>
+                Children who do not have any major health condition.</li>
+            </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Health Camp</strong></h2>
+      <img src="../../../assets/images/How to Get the Most Out of Savasana In Your Next Yoga Class.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Full Moon Meditation</strong></h2>
+      <img src="../../../assets/images/Woman practicing yoga on beach.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Dyanaism for self and Nation Program</strong></h2>
+      <img src="../../../assets/images/Yoga Videos.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Blessing Programs</strong></h2>
+      <img src="../../../assets/images/Why Yoga Is More Than Just An Instagram Picture.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Body Matters Program</strong></h2>
+      <img src="../../../assets/images/The Fine Art of Creating a Yoga Playlist — Shut Up & Yoga.jpg" alt="Mike" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+        <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+    </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h2 align="center"><strong>Benefits of Surya Namaskar</strong></h2>
+      <img src="../../../assets/images/Women's Sportswear and Active Wear.jpg" alt="John" style="width:100%">
+      <div class="container"><br>
+        <ul>
+            <li><h2>Programme:</h2>
+                Yoga for Beginners</li> 
+            <li><h2>Content:</h2>
+                This programme offers an excellent opportunity for children to learn good qualities and morals, and sit in peace,
+                 which will stand good throughout their lives. The course covers simple Yoga Asanas. 
+                 Yoga philosophy is taught through arts, crafts and interesting games. 
+                 It is ideal for children between the ages of 5 to 12 years. 
+                 The classes are conducted by highly trained and caring teachers. 
+                 There is no burden of homework or exams. Classes are conducted in English and Hindi. 
+                 Involvement of parents is highly recommended.
+                
+                 </li>
+            <li><h2>Duration:</h2>
+                Weekdays-
+          <pre> 1 hour on every Monday,
+                Tuesday, Thursday and Friday.
+                Time: 4.30 p.m. to 5.30 p.m.
+                Weekends (Saturday & Sunday)-
+                Time: 8.00 a.m. to 9.30 a.m.
+            </pre>
+            </li>
+               </ul>
+      <button type="button" class="btn btn-info" (click)="gotologinpage()">Apply</button>
+
+    </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+

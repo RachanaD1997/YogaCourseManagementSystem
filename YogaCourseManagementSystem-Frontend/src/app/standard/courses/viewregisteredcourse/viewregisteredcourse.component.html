@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<div class="container" style="width: 75%;">
+    <div class="row">
+        <div class="col-md-12">
+            <div >
+                <div >
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <th>Course Name</th>
+                            <th>Availability</th>
+                            <th>BeginDate</th>
+                            <th>EndDate</th>
+                            <th>Location</th>
+                            <th>Fees</th>
+                        </thead>
+                        <tbody *ngFor="let obj of cartArray | keyvalue">
+                            <tr *ngFor="let c of obj.value">
+                                <td>{{c.name}}</td>
+                                <td>{{c.availability}}</td>
+                                <td>{{c.beginDate}}</td>
+                                <td>{{c.endDate}}</td>
+                                <td>{{c.location}}</td>
+                                <td>{{c.fees}}</td>
+
+                            </tr>
+                            <tr>
+                                <!-- <td colspan="6">
+                                    <button type="button" class="btn btn-primary" routerLink="viewcourse">Proceed</button>
+                                </td> -->
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<footer class="page-footer bg-dark">
+    <div>
+      <div class="container bg-primary">
+        <div class="row py-4 d-flex align-items-content-center">
+          <div class="col-md-12 text-center">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f text-white mr-5"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter text-white mr-5"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in text-white mr-5"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Footer -->
+    <div class="container text-center text-md-left mt-5">
+      <div class="row">
+        <div class="col-md-2 mx-auto mb-4">
+          <h3 class="text-uppercase font-weight-bold text-white">The Provider</h3>
+          <hr class="bg-primary mb-4 mt-0 d-inline-block mx-auto " style="width:115px; height:2px">
+          <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate optio excepturi dicta iste debitis exercitationem rerum blanditiis impedit, dignissimos perspiciatis in obcaecati natus ducimus. Illum aperiam numquam id adipisci dignissimos?</p>
+        </div>
+        
+        
+  
+        <div class="col-md-2 mx-auto mb-4">
+          <h3 class="text-uppercase font-weight-bold text-white">Important Links</h3>
+          <hr class="bg-primary mb-4 mt-0 d-inline-block mx-auto " style="width:145px; height:2px">
+  
+          <ul class="list-unstyled text-white">
+            <li class="my-2 "><a href="#"><span class="text-white">Home</span> </a></li>
+            <li class="my-2"><a href="aboutus"><span class="text-white">About Us</span></a></li>
+            <li class="my-2"><a href="contactus"><span class="text-white">ContactUs</span></a></li>
+          </ul>
+          </div>
+  
+          <div class="col-md-3 mx-auto mb-4">
+          <h3 class="text-uppercase font-weight-bold text-white">Contacts</h3>
+          <hr class="bg-primary mb-4 mt-0 d-inline-block mx-auto " style="width:85px; height:2px">
+  
+          <ul class="list-unstyled text-white">
+            <li class="my-2 "><i class="fas fa-home text-white mr-3"></i>Shivaji Nagar,Pune</li>
+            <li class="my-2"><i class="fas fa-envelope text-white mr-3"></i>rachanapiyusha.@gmail.co</li>
+            <li class="my-2"><i class="fas fa-phone text-white mr-3"></i>7066959395,8766959395</li>
+          </ul>
+          </div>
+          
+  
+      </div>
+    </div>
+  </footer>

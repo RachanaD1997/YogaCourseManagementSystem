@@ -1,0 +1,27 @@
+
+
+  <div class="container" align="center">
+    <h2>Deatils Of Course</h2>
+    <br>
+    <br>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-danger"><b>Id  : </b> {{course.id }}</li>
+      <li class="list-group-item list-group-item-primary"><b>Name  :</b>  {{course.name}}</li>
+      <li class="list-group-item list-group-item-primary"><b>Availability  : </b>  {{course.availability}}</li>
+  
+      <li class="list-group-item list-group-item-primary"><b>BeginDate  : </b>  {{course.beginDate}}</li>
+      <li class="list-group-item list-group-item-primary"><b>EndDate  : </b>  {{course.endDate}}</li>
+      <li class="list-group-item list-group-item-primary"><b>Capacity  : </b>  {{course.capacity}}</li>
+      <li class="list-group-item list-group-item-primary"><b>Duration  : </b>  {{ course.duration}}</li>
+      <li class="list-group-item list-group-item-primary"><b>Location  : </b>  {{ course.location}}</li>
+      <li class="list-group-item list-group-item-primary"><b>EligibilityCriteria  : </b>  {{ course.eligibilityCriteria}}</li>
+      <li class="list-group-item list-group-item-primary"><b>Status  : </b>  {{ course.status}}</li>
+      <li class="list-group-item list-group-item-primary"><b>Fees  : </b>  {{ course.fees}}</li>
+      <li class="list-group-item list-group-item-primary"><b>TeacherID  : </b>  {{ course.teacher.id}}</li>
+
+    </ul>
+    </div>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary "(click)="gotolist()">Back</button>

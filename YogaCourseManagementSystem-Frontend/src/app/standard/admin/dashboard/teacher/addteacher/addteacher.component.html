@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<div align="center" class="container">
+    <div class="row" >
+  
+  
+  
+        <div class="col-sm-6 ">
+  
+            <div class="signup-form ">
+
+                
+  
+                <form class="form-horizontal" (ngSubmit)="addTeacher()">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Add New Center</h1>
+                        </div>
+                    </div>
+
+                    <div *ngIf="alert" class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Success !</h4>
+                        <p>Teacher successfully Added </p>
+                      
+                      </div>
+
+                  
+                    
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-4"> Name </label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="Enter name " name="name" [(ngModel)]="teacher.name" required="required"
+                            #name="ngModel"
+							 [class.is-invalid]="name.invalid && name.touched"
+                            >
+							 <div *ngIf="name.errors && (name.invalid && name.touched)">
+							  <small class="text-danger" *ngIf="name.errors.required"> Name  is Required Field</small>
+							 
+                        </div>
+                      </div>
+                    </div>
+					
+  
+					
+                    <div class="form-group row">
+                        <label class="col-form-label col-md-4"> Email</label>
+                           <div class="col-md-8">
+                               <input type="email" class="form-control"  placeholder="Enter email" name="email" [(ngModel)]="teacher.email" required
+                                pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"  #email="ngModel" 
+                                [class.is-invalid]="email.invalid && email.touched"
+                                >
+                              <div *ngIf="email.errors && (email.invalid && email.touched)">
+                                 <small class="text-danger" *ngIf="email.errors.required">Email Id is Required Field</small>
+                                 <small class="text-danger" *ngIf="email.errors.pattern">Enter the Valid Email Id</small>			 
+                                              </div>
+                                            </div>
+                                          </div>
+                             
+                             
+                             
+                            
+                                          <div class="form-group row">
+                                            <label class="form-control-label col-md-4 ">Password</label>
+                                            <div class="col-md-8">
+                                            <input type="password" class="form-control" placeholder="Enter password" name="pwd" [(ngModel)]="teacher.password" #password="ngModel" required
+                                            [class.is-invalid]="password.invalid && password.touched"
+                                            >
+                                           <!-- <small class="text-danger" [class.d-none]="password.invalid || password.untouched">Password is Required Field</small>-->
+                                            <div *ngIf="password.errors && (password.invalid && password.touched)">
+                                              <small class="text-danger" *ngIf="password.errors.required">Password is Required Field</small>
+                                             
+                                            </div>
+                                          </div>
+                                        </div>
+              
+                     <div class="form-group row">
+                        <label class="col-form-label col-md-4">ContactNumber</label>
+                        <div class="col-md-8">
+                            <input type="number" class="form-control" name="contactNumber" [(ngModel)]="teacher.contactNumber" required="required">
+                        </div>
+                    
+                    <div class="form-group row">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" [(ngModel)]="teacher.gender" size="3">
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                         
+                        </select> 
+                      
+                    </div>
+
+
+                    <div class="form-group row">
+                      <label class="col-form-label col-md-4"> Disability </label>
+                      <div class="col-md-8">
+                          <input type="text" class="form-control" placeholder="Enter name " name="name" [(ngModel)]="teacher.disability" required="required"
+                          #disability="ngModel"
+                   [class.is-invalid]="disability.invalid && name.touched">
+                  <div *ngIf="disability.errors && (disability.invalid && disability.touched)">
+                  <small class="text-danger" *ngIf="disability.errors.required"> Name  is Required Field</small>
+             
+                      </div>
+                    </div>
+                  </div>
+        
+						
+					       <div class="form-group row">
+                        <label class="col-form-label col-md-4">CenterID</label>
+                        <div class="col-md-8">
+                            <input type="number" class="form-control" name="experience" [(ngModel)]="teacher.center.id" required="required">
+                        </div>
+                      
+                    </div>
+                  
+
+                    <div class="form-group row">
+                        <div class="col-md-8 offset-md-4">
+                           
+                        </div>
+                    </div>
+                    
+                
+                <button type="submit"  class="btn btn-success" (click)="addTeacher()">Add Center</button>&nbsp;&nbsp;
+                <button type="button" class="btn btn-primary" (click)="back()">Back</button>
+  
+            </div>
+        
+  

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<div class="container">
+    <h1 align="center"><u><strong>UserDetails</strong></u></h1>
+           
+    <table class="table table-striped">
+      <thead>
+        <tr style="font-size: large;">
+          <th>ID</th>
+
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>ContactNumber</th>
+          <th>Age</th> 
+          <th>Actions</th>     
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let users of userss">
+        <tr>
+         
+          <td>{{users.id }}</td>
+          <td>{{users.firstName }}</td>
+          <td>{{users.lastName }}</td>
+          <td>{{users.email }}</td>
+          <td>{{users.contactNumber}}</td>
+          <td>{{users.age}}</td>
+          
+ 
+          
+          <td>
+            
+            <button type="button" (click)="viewUser(users.id)"  class="btn btn-success"><i class="far fa-eye"></i></button>&nbsp;&nbsp;
+            <!-- <button type="button" (click)="EditManager(manager.id)"  class="btn btn-primary"><i class="fas fa-edit"></i></button>&nbsp;&nbsp; -->
+            <button (click)="delete(users.id)" type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+          </td>
+       
+        </tr>
+        
+
+      </tbody>
+    </table>
+        <!-- <button  type="button" class="btn btn-success" (click)="addnewmanager()">Add New Manager</button>&nbsp;&nbsp; -->
+
+    <button  type="button" class="btn btn-primary" (click)="back()">Back</button>&nbsp;&nbsp;
+    <button type="button" class="btn btn-danger" (click)="logout()">Logout</button>&nbsp;&nbsp;&nbsp;
+
+
+  </div>
+

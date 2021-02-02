@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let c of course">
+        <div class="card" style="width: 15rem; height: 450px; margin-bottom: 30px;">
+          <img src="../../../assets/images/login.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 class="card-title "><u>{{c.name}}</u></h2>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Status : {{c.status}}</li>
+            <li class="list-group-item">Fees : {{c.fees}}</li>
+          </ul>
+          <div class="card-body">
+            <button type="button" class="btn btn-success mr-2" [routerLink]="['/viewcourse',c.id]">View</button>
+            <button type="button" class="btn btn-primary" (click)="AddToCart(c.id)">Register</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary" [routerLink]="['/viewregisteredcourse']">View Courses</button>
+      </div>
+    </div>
+</div>
